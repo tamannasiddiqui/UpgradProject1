@@ -1,0 +1,68 @@
+/* Set a style for all elements inside the header i.e. Sign Up button, Sign In button, 
+the title "ScriBBler" & the sub-heading below "ScriBBLer" */
+ 
+.head1
+{
+    display: inline-block;
+    margin: 3px;
+    padding: 5px;
+}
+
+.head2
+{
+    display: inline;
+    margin: 10px;
+}
+
+#scribTitle
+{
+    float: left;
+    font-family: 'Satisfy' , cursive;
+    font-size:50px;
+    color: blue;
+    margin: auto;
+    text-decoration: none;
+    
+}
+
+#scribTitle2
+{
+   font-family: 'Marck Script', cursive;
+   color: black;
+   font-size: 17px;
+   margin-top: 12px;
+
+}
+.topButtons
+{
+    background-color: blue;
+    padding: 10px;
+    float: right;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90px;
+    margin: 10px 10px 0px 0px;
+    opacity: 0.9;
+    font-weight: 500;
+    font-size: 90%;
+
+}
+
+.postButtons
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin: 200px;
+}
+
+.centreButtons
+{
+    background-color: goldenrod;
+    padding: 10px;
+    font-weight: bolder;
+    color: black;
+    margin: 10px;
+    width: 100px;
+}
