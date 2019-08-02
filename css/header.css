@@ -45,6 +45,7 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
     opacity: 0.9;
     font-weight: 500;
     font-size: 90%;
+    cursor: pointer;
 
 }
 
@@ -55,14 +56,17 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
     flex-direction: row;
     align-items: center;
     margin: 200px;
+
 }
 
 .centreButtons
 {
     background-color: goldenrod;
-    padding: 10px;
+    padding: 6px;
     font-weight: bolder;
     color: black;
-    margin: 10px;
-    width: 100px;
+    margin: 8px;
+    width: 110px;
+    cursor: pointer;
+    
 }
