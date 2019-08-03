@@ -64,7 +64,7 @@
                                     <input class="form-control override" type="password" name="password" id="password1" placeholder="Enter Password" required>
                                 </div>                         
                                 <div>
-                                    <a href="./index.html"><button type="button" class="btn btn-success form-control buttonBorder" id="signInBtn" onclick="return validateForm1()">Sign In</button></a>
+                                     <button type="button" class="btn btn-success form-control buttonBorder" id="signInBtn" onclick="return validateForm1(); resetForm1()">Sign In</button>
                                 </div>
                             </form>
                             <br>
@@ -78,7 +78,7 @@
         </div> 
 
         <div>
-        <!-- Insert code for Sign Up modal here -->
+        <!--  Sign Up modal  -->
             <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle1" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
@@ -109,8 +109,7 @@
                                     <input class="form-control override" type="password" name="" id="cpassword" placeholder="Confirm Password" required>
                                 </div>                              
                                 <div>
-                                    <button type="button" class="btn btn-success form-control buttonBorder" onclick="return validateForm()">Sign Up</button>
-                                </div>
+                                    <button type="button" class="btn btn-success form-control buttonBorder" onclick="return validateForm(); window.location.reload()">Sign Up</button>                                </div>
                             </form>
                             <br>                                                     
                         </div>
@@ -120,7 +119,7 @@
         </div>
 
     <div>
-        <!-- Insert code for Create Post modal here -->
+        <!--   Create Post modal  -->
         <div class="modal fade" id="createPostModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle2" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -142,17 +141,14 @@
                                  <textarea rows="5" cols="52" placeholder="Enter your content here" required></textarea>
                             </div>                         
                             <div>
-                                <a href="./index.html"><button type="button" class="btn btn-success buttonBorder form-control" id="createPost">Create Post</button></a>
+                                <a href="./index.html"><button type="button" class="btn btn-success buttonBorder form-control" id="createPost" onclick="window.location.reload()">Create Post</button></a>
                             </div>
                         </form>
-                        <br>
-                         
-                                                     
+                        <br>                                                                          
                     </div>
                  </div>
             </div>    
         </div>    
-
     </div>
 
 	<!-- Place all Javascript for header in this file -->

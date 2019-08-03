@@ -1,25 +1,65 @@
-// // Get the modal
-// var modal = document.getElementById("popUpSignIn");
+function validateForm(){
+    var username = document.getElementById('username').value;
+    var fullname = document.getElementById('fullname').value;
+    var password = document.getElementById("password").value;
+    var confirmPassword = document.getElementById("cpassword").value;
 
-// // Get the button that opens the modal
-// var btn = document.getElementById("signIn");
 
-// // // Get the <span> element that closes the modal
-// // var span = document.getElementsByClassName("close")[0];
+    
+    if( fullname == "" ) {
+        alert( "Please provide your fullname!" );
+        fullname.focus() ;
+        return false;
+     }
 
-// // When the user clicks the button, open the modal 
-// btn.onclick = function() {
-//   modal.style.display = "block";
-// }
+    if( username == "" ) {
+        alert( "Please provide your username!" );
+        username.focus() ;
+        return false;
+     }
 
-// // // When the user clicks on <span> (x), close the modal
-// // span.onclick = function() {
-// //   modal.style.display = "none";
-// // }
+    
+     if( password == "" ) {
+        alert( "Please provide your password!" );
+        password.focus() ;
+        return false;
+     }
+    
+     if( confirmPassword == "" ) {
+        alert( "Please confirm your password!" );
+        confirmPassword.focus() ;
+        return false;
+     }
 
-// // // When the user clicks anywhere outside of the modal, close it
-// // window.onclick = function(event) {
-// //   if (event.target == modal) {
-// //     modal.style.display = "none";
-// //   }
-// // }
+
+    if (password != confirmPassword) {
+        alert("Passwords do not match.");
+        return false;
+    }
+    return true;
+}
+
+function validateForm1(){
+    var userName = document.getElementById('username1').value;
+    var password = document.getElementById("password1").value;
+
+    if( userName == "" ) {
+        alert( "Please provide your name!" );
+        userName.focus() ;
+        return false;
+     }
+
+     if( password == "" ) {
+        alert( "Please provide your password!" );
+        password.focus() ;
+        return false;
+     }
+    
+     
+}
+
+function resetForm1(){
+    var reset=document.getElementById("signInForm").value;
+    reset.reset();
+}
+    
