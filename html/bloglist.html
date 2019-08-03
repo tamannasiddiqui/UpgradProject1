@@ -6,27 +6,66 @@
     <link href='..\css\header.css' rel='stylesheet' type='text/css'>
     <link href='..\css\font.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <style>
     </style>
 </head>
 <body>
     <div id="main-container-div">
         <div class="header">
-                                
-            <!-- Insert code for Sign Up, Sign In button here. 
-                 Add code for "ScriBBler" heading and the sub-heading -->
-
+            <div class="head1">
+                <h2 id="scribTitle">ScriBBler</h2>
+                <p id ="scribTitle2">Explore, Imagine, Create</p>
+             </div>
+             <div class="head2">
+                <button type="button" class="topButtons" id="sign-Up" data-toggle="modal" data-target="#signUpModal">Sign Up</button>
+                <button type="button" class="topButtons" id="sign-In"data-toggle="modal" data-target="#signInModal">Sign In</button>
+             </div>            
         </div>
     </div>
     <div>
-
-        <!-- Insert code for Sign In modal here -->
-
+        <!--  Sign In modal here -->
+        <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <!--header-->
+                    <div class="modal-header text-center">
+                        <h2 class="modal-title title w-100" id="exampleModalLongTitle"><b>Welcome Back!</b></h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>    
+                    </div>
+                    <!--body-->
+                    <div class="modal-body">                      
+                       <form name="signInForm" action="./index.html" method="POST"> 
+                            <div class="form-group">
+                                <label><b>Username</b></label>
+                                <input class="form-control override" type="text" name="name" id="username1" placeholder="Enter Username" required>
+                            </div>
+                            <div class="form-group">
+                                <label><b>Password</b></label>
+                                <input class="form-control override" type="password" name="password" id="password1" placeholder="Enter Password" required>
+                            </div>                         
+                            <div>
+                                <a href="./index.html"><button type="button" class="btn btn-success form-control buttonBorder" id="signInBtn" onclick="return validateForm1()">Sign In</button></a>
+                            </div>
+                        </form>
+                        <br>
+                         <!--footer-->
+                          <p class="footer"><b>Not a member? <a href="index.html#popUpSignUp" style="color: blue" data-toggle="modal" data-target="#signUpModal" data-dismiss="modal"> Sign Up</a></b></p>
+                                                     
+                    </div>
+                 </div>
+            </div>    
+        </div>    
     </div>
 
     <div>
-
-        <!-- Insert code for Sign Up modal here -->
+        <!-- Sign Up modal -->
+        
 
     </div>
 
