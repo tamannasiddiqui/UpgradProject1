@@ -7,6 +7,7 @@
     margin: 10px 10px 10px 20px;
     float:left;
     border-radius: 15px;
+    
 }
     
 .post-left {
@@ -17,6 +18,8 @@
         text-align: center;
         font-weight: bold;
         color: #000;
+        background-color: white !important;
+        border-radius:  15px 0 0 15px  !important;
 }
 .post-content {
         width: 75%;           
@@ -25,7 +28,8 @@
         background-color: #E8E8E8;
         color: #000000;
         border-radius: 0 15px 15px 0;
-        padding: 0 20px;      
+        padding: 0 20px; 
+        overflow: hidden;     
 }
 .post-title{
     font-family: 'Itim', cursive;
@@ -33,6 +37,7 @@
     color: #2b312b;
     font-size: 25px;
     height: 25px;
+    /* overflow-clip-box: content-box !important; */
     }
 .post-more {
     float: right;
@@ -46,6 +51,7 @@
 .post-desc{
     height: 100px;
     margin-bottom: 0 !important;
+    overflow:  hidden !important;
 }
 
 body {
@@ -60,5 +66,22 @@ body {
 .allPostsContainer {
     height: 100%;
     width: 100%;
+}
+#scribTitle1
+{
+   font-family: 'Marck Script', cursive;
+   color: white;
+   font-size: 17px;
+   margin-top: 12px;
 
+}
+
+.dotStyle{
+    text-align: right;
+}
+
+.trashStyle{
+    text-align: right !important;
+    margin-top: 11px;
+    
 }

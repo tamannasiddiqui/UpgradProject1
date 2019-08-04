@@ -1,4 +1,4 @@
-function validateForm(){
+function validateForm2(){
     var username = document.getElementById('username').value;
     var fullname = document.getElementById('fullname').value;
     var password = document.getElementById("password").value;
@@ -16,20 +16,20 @@ function validateForm(){
         alert( "Please provide your username!" );
         username.focus() ;
         return false;
-     }
+    }
 
     
      if( password == "" ) {
         alert( "Please provide your password!" );
         password.focus() ;
         return false;
-     }
+    }
     
      if( confirmPassword == "" ) {
         alert( "Please confirm your password!" );
         confirmPassword.focus() ;
         return false;
-     }
+    }
 
 
     if (password != confirmPassword) {
@@ -37,6 +37,8 @@ function validateForm(){
         return false;
     }
     return true;
+
+     
 }
 
 function validateForm1(){
@@ -54,12 +56,10 @@ function validateForm1(){
         password.focus() ;
         return false;
      }
-    
      
 }
 
 function resetForm1(){
-    var reset=document.getElementById("signInForm").value;
-    reset.reset();
-}
+    document.getElementById("signInForm").reset();
     
+}
