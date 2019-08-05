@@ -85,3 +85,10 @@ body {
     margin-top: 11px;
     
 }
+
+.fa-lg {
+    font-size: 1.33333em;
+    line-height: .75em;
+    vertical-align: -.0667em;
+    cursor: pointer !important;
+}
