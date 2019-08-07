@@ -100,10 +100,13 @@ body {
     text-align: right;
 }
 
-.trashStyle{
+.trashStyle {
     text-align: right !important;
-    margin: 11px !important;
-    
+    margin-top: 13px;
+    margin-right: 0px;
+    margin-bottom: -12px;
+    margin-left: 20px;
+    cursor: pointer !important;
 }
 
 .fa-lg {

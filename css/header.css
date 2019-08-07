@@ -84,7 +84,7 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
     border: 1px solid rgba(0,0,0,.2);
     border-radius: 0px !important;
     outline: 0;
-    font-family: "Abel",cursive !important;
+    font-family: 'Abel', sans-serif !important;
     font-weight: bolder !important;
  }
  
