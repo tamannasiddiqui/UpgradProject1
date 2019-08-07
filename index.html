@@ -64,7 +64,7 @@
                                     <input class="form-control override" type="password" name="password" id="password1" placeholder="Enter Password" required>
                                 </div>                         
                                 <div>
-                                     <button type="submit" class="btn btn-success form-control buttonBorder" id="signInBtn" onclick="return validateForm1()">Sign In</button>
+                                     <button type="submit" class="btn btn-success form-control buttonBorder" id="signInBtn" onclick="sumbitSignIn()">Sign In</button>
                                 </div>
                             </form>
                             <br>
@@ -91,7 +91,7 @@
                         </div>
                         <!--body-->
                         <div class="modal-body">                      
-                           <form action="#" name="signUpForm" method="POST">
+                           <form action="./index.html" name="signUpForm" method="POST">
                                 <div class="form-group">
                                     <label><b>Full Name</b></label>
                                     <input class="form-control override" type="text" name="fullName" id="fullname" placeholder="Enter Full Name" required>
@@ -109,7 +109,7 @@
                                     <input class="form-control override" type="password" name="" id="cpassword" placeholder="Confirm Password" required>
                                 </div>                              
                                 <div>
-                                    <button type="submit" class="btn btn-success form-control buttonBorder" onclick="return validateForm2()">Sign Up</button>                                </div>
+                                    <button type="submit" class="btn btn-success form-control buttonBorder" onclick="sumbitSignUp()">Sign Up</button>                                </div>
                             </form>
                             <br>                                                     
                         </div>
@@ -141,7 +141,7 @@
                                  <textarea rows="5" cols="52" placeholder="Enter your content here" required></textarea>
                             </div>                         
                             <div>
-                                <a href="./index.html"><button type="button" class="btn btn-success buttonBorder form-control" id="createPost" onclick="window.location.reload()">Create Post</button></a>
+                                <a href="./index.html"><button type="submit" class="btn btn-success buttonBorder form-control" id="createPost" onclick="sumbitCreatePost()">Create Post</button></a>
                             </div>
                         </form>
                         <br>                                                                          

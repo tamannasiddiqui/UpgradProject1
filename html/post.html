@@ -12,12 +12,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-      <!--included Fontawesome-->
-    <script src="https://kit.fontawesome.com/c0106cd3ba.js"></script>
-
-    <style>        
-    </style>     
+   
 </head>
 <body>
     <div class="header">
@@ -50,7 +45,7 @@
                          </div>
                          <!--body-->
                          <div class="modal-body">                      
-                            <form name="signInForm" action="./index.html" method="POST"> 
+                            <form name="signInForm" action="./post.html" method="POST"> 
                                  <div class="form-group">
                                      <label><b>Username</b></label>
                                      <input class="form-control override" type="text" name="name" id="username1" placeholder="Enter Username" required>
@@ -60,7 +55,7 @@
                                      <input class="form-control override" type="password" name="password" id="password1" placeholder="Enter Password" required>
                                  </div>                         
                                  <div>
-                                      <button type="submit" class="btn btn-success form-control buttonBorder" id="signInBtn" onclick="return validateForm1()">Sign In</button>
+                                      <button type="submit" class="btn btn-success form-control buttonBorder" id="signInBtn" onclick="sumbitSignIn()">Sign In</button>
                                  </div>
                              </form>
                              <br>
@@ -87,7 +82,7 @@
                          </div>
                          <!--body-->
                          <div class="modal-body">                      
-                            <form action="#" name="signUpForm" method="POST">
+                            <form action="./post.html" name="signUpForm" method="POST">
                                <div class="form-group">
                                      <label><b>Full Name</b></label>
                                     <input class="form-control override" type="text" name="fullName" id="fullname" placeholder="Enter Full Name" required>
@@ -105,7 +100,7 @@
                                     <input class="form-control override" type="password" name="" id="cpassword" placeholder="Confirm Password" required>
                                 </div>                              
                                  <div>
-                                    <button type="submit" class="btn btn-success form-control buttonBorder" onclick="return validateForm2()">Sign Up</button> 
+                                    <button type="submit" class="btn btn-success form-control buttonBorder" onclick="sumbitSignUp()">Sign Up</button> 
                                 </div>
                             </form>
                              <br>                                                     
@@ -124,20 +119,28 @@
                 
                  <div class="blogAuthor">
                     <!-- code for Edit/Save button-->                  
-                    <span>
-                            <button type="button" class="editBtn" id=editButton>Edit <i class="fas fa-edit fa-sm"></i></button>
-                    </span>
+                    <div>
+                        <button type="button" class="editBtn" id=editButton onclick="editPost()">Edit <i class="fa fa-edit"></i></button>
+                    </div>
                     <p>Jimi</p>
                      
+                </div>                
+                <div class="blogText">
+                    <p id="blogBody">
+                        Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz. Hendrix favored overdriven amplifiers with high volume and gain.[119] He was instrumental in developing the previously undesirable technique of guitar amplifier feedback, and helped to popularize use of the wah-wah pedal in mainstream rock.[348] He rejected the standard barre chord fretting technique used by most guitarists in favor of fretting the low 6th string root notes with his thumb.[349] He applied this technique during the beginning bars of "Little Wing", which allowed him to sustain the root note of chords while also playing melody. This method has been described as piano style, with the thumb playing what a pianist's left hand would play and the other fingers playing melody as a right hand.[350] Having spent several years fronting a trio, he developed an ability to play rhythm chords and lead lines together, giving the audio impression that more than one guitarist was performing.[351][nb 41] He was the first artist to incorporate stereophonic phasing effects in rock music recordings.[354] Holly George-Warren of Rolling Stone commented: "Hendrix pioneered the use of the instrument as an electronic sound source. Players before him had experimented with feedback and distortion, but Hendrix turned those effects and others into a controlled, fluid vocabulary every bit as personal as the blues with which he began."[3][nb 42] Aledort wrote: "In rock guitar, there are but two eras � before Hendrix and after Hendrix."
+                    </p>
+                </div>
+                <!--code for Like button, Comment button, Comment box-->
+                <button type="button" class="likeBtn"><i class="fa fa-thumbs-up"> Like</button></i>
+
+                <div class="likeEdit">
+                    <p>Be the first one to like this</p>
                 </div>
                 
-                        <div class="blogText">
-                            <p id="blogBody">
-                                Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz. Hendrix favored overdriven amplifiers with high volume and gain.[119] He was instrumental in developing the previously undesirable technique of guitar amplifier feedback, and helped to popularize use of the wah-wah pedal in mainstream rock.[348] He rejected the standard barre chord fretting technique used by most guitarists in favor of fretting the low 6th string root notes with his thumb.[349] He applied this technique during the beginning bars of "Little Wing", which allowed him to sustain the root note of chords while also playing melody. This method has been described as piano style, with the thumb playing what a pianist's left hand would play and the other fingers playing melody as a right hand.[350] Having spent several years fronting a trio, he developed an ability to play rhythm chords and lead lines together, giving the audio impression that more than one guitarist was performing.[351][nb 41] He was the first artist to incorporate stereophonic phasing effects in rock music recordings.[354] Holly George-Warren of Rolling Stone commented: "Hendrix pioneered the use of the instrument as an electronic sound source. Players before him had experimented with feedback and distortion, but Hendrix turned those effects and others into a controlled, fluid vocabulary every bit as personal as the blues with which he began."[3][nb 42] Aledort wrote: "In rock guitar, there are but two eras � before Hendrix and after Hendrix."
-                            </p>
-                        </div>
-                
-                        <!--code for Like button, Comment button, Comment box-->
+                <textarea id="commentBox" rows="3" cols="100" placeholder="Leave a comment..."></textarea>
+                <br>
+                <button type="button" class="commentBtn">Comment</button>
+
                  
             </div>
         </div>

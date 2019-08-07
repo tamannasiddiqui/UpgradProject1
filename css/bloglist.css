@@ -43,23 +43,23 @@
         padding: 0 20px; 
         overflow: hidden;     
 }
-.post-title{
+.post-title {
     font-family: 'Itim', cursive;
     font-weight: bold;
     color: #2b312b;
     font-size: 25px;
     height: 25px;
     text-align: left !important;
-    /* overflow-clip-box: content-box !important; */
-    }
+    margin-top: 25px;
+}
+
 .post-more {
     float: right;
     cursor: pointer;
-    font-size: 18px;
-    margin-right: 0 !important;
+     margin-right: 0 !important;
     padding-right: 0 !important;
     padding-bottom: 10px;
-    font-size: 30px;
+    font-size: 20px;
 }
 .post-desc{
     height: 100px;
@@ -101,19 +101,18 @@ body {
 }
 
 .trashStyle {
-    text-align: right !important;
     margin-top: 13px;
-    margin-right: 0px;
-    margin-bottom: -12px;
-    margin-left: 20px;
+    margin-right: 2px;
+    margin-bottom: 10px;
+    margin-left: 9px;
     cursor: pointer !important;
+    float: right;
+    font-size: 20px;
 }
 
-.fa-lg {
-    font-size: 1.33333em;
-    line-height: .75em;
-    vertical-align: -.0667em;
-    cursor: pointer !important;
+.fa-ellipsis-h{
+    color: black !important;
+    cursor: pointer;
 }
 
 .deleteHead {
@@ -160,3 +159,21 @@ body {
     text-align: center;
     margin-top: 0px;
 }
+
+
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    div.allPostsContainer {background-color: green;}
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    div.allPostsContainer {background-color: blue;}
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    div.allPostsContainer {background-color: orange;}
+  } 
+  
