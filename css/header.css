@@ -105,7 +105,8 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
  
  .modal-header .close {
     padding: 1rem;
-    margin: -1rem -2rem -1rem auto !important;
+    margin: -2rem -3rem -1rem auto !important;
+   
  }
  
  .close {
