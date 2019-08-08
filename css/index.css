@@ -10,8 +10,7 @@ body{
    display: block;
 } 
 
-
-
+ /* CSS code for the Create Post modal */
 textarea {
    overflow: auto;
    resize: vertical;

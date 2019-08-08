@@ -139,6 +139,10 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
     background-color: #1e7e34 !important;
     border-color: #1c7430 !important;
  }
+
+  .btn-success{
+     font-weight: bold !important;
+ }
  
  .footer {
     display: -ms-flexbox;

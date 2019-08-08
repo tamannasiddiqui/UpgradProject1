@@ -9,7 +9,6 @@
 }
 
 .blogAuthor {
-    /* padding: 0px 0px 0px 10px; */
     font-family: 'Niconne', cursive;
     font-size: 30px;
     display: inline;
@@ -39,6 +38,10 @@
     box-shadow: 1px 1px 4px #EA3C53;
 }
 
+.editBtn:hover{
+    background-color: crimson;
+}
+
 .likeBtn {
     font-family: Arial, Helvetica, sans-serif ,Abel!important;
     cursor: pointer;
@@ -50,6 +53,10 @@
     border: none;
     box-shadow: 2px 2px 4px #EA3C53;
     border-radius: 3px;
+}
+
+.likeBtn:hover{
+    background-color: crimson;
 }
  
 .commentBtn{
@@ -65,6 +72,10 @@
     margin-top: 9px;
 }
 
+.commentBtn:hover{
+    background-color: crimson;
+}
+
 .likeEdit {
     font-family: PatrickHandSC;
     font-size: 15px;
@@ -72,4 +83,14 @@
     margin-top: 6px;
     margin-bottom: 21px;
      
+}
+
+.comments {
+    margin-top: 30px;
+    font-family: -WEBKIT-PICTOGRAPH;
+}
+
+#commentText{
+    font-size: 17px;
+    font-weight: bold;
 }
