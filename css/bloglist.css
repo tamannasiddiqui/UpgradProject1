@@ -158,22 +158,91 @@ body {
 .deletePost{
     text-align: center;
     margin-top: 0px;
-}
+} 
 
-
+    /* Making the content responsive */
   
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
-    div.allPostsContainer {background-color: green;}
+   
+  /* Small devices (portrait tablets and large phones, 480px ) */
+   @media only screen and (max-width: 480px){
+       body{
+           background-color: #FEDC56 ;
+       }
+       .post-title{
+        overflow: hidden;
+        font-size: 23px;
+    }
+   } 
+
+   
+  /* Small devices (portrait tablets and large phones, 576px ) */
+   @media (max-width: 576px){
+    body{
+        background-color:  #FFC30B;
+    }
+    .post-title{
+     overflow: hidden;
+     font-size: 22px;
+ }
+   }
+
+
+  /* Small devices (portrait tablets and large phones, 600px ) */
+  @media only screen and (max-width: 600px) 
+  {
+    body {
+        background-color: #FFBF00;
+    }
+    .post-title{
+        overflow: hidden;
+        font-size: 22px;
+    }
+    
   }
   
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
-    div.allPostsContainer {background-color: blue;}
+  /* Medium devices (landscape tablets, 768px ) */
+  @media only screen and (max-width: 768px) {
+    body {
+        background-color: #FDA506;
+    }
+    .post-title{
+        overflow: hidden;
+        font-size: 22px;
+        
+    }
   } 
   
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-    div.allPostsContainer {background-color: orange;}
+  /* Large devices (laptops/desktops, 900px) */
+  @media only screen and (max-width: 900px) {
+    body {
+        background-color: orange;
+    }
+    .post-title{
+        overflow: hidden;
+        font-size: 22px;
+        
+    }
   } 
+    /* Large devices (laptops/desktops, 1024px) */
+  @media only screen and (max-width: 1024px){
+    body {
+        background-color: orange;
+    }
+    .post-title{
+        overflow: hidden;
+        font-size: 22px;
+        
+    }
+  }
   
+   /* Large devices (laptops/desktops, 1200px) */
+  @media only screen and (max-width: 1200x){
+    body {
+        background-color: orange;
+    }
+    .post-title{
+         
+        font-size: 25px;
+        
+    } 
+  }
