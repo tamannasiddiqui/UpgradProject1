@@ -55,7 +55,7 @@
                                      <input class="form-control override" type="password" name="password" id="password1" placeholder="Enter Password" required>
                                  </div>                         
                                  <div>
-                                      <button type="submit" class="btn btn-success form-control buttonBorder" id="signInBtn" onclick="sumbitSignIn()">Sign In</button>
+                                      <button type="submit" class="form-control buttonBorder" id="signInBtn" onclick="sumbitSignIn()">Sign In</button>
                                  </div>
                              </form>
                              <br>
@@ -82,7 +82,7 @@
                          </div>
                          <!--body-->
                          <div class="modal-body">                      
-                            <form action="./post.html" name="signUpForm" method="POST">
+                            <form action="./post.html" name="signUpForm"  id="signUp" method="POST">
                                <div class="form-group">
                                      <label><b>Full Name</b></label>
                                     <input class="form-control override" type="text" name="fullName" id="fullname" placeholder="Enter Full Name" required>
@@ -100,7 +100,7 @@
                                     <input class="form-control override" type="password" name="" id="cpassword" placeholder="Confirm Password" required>
                                 </div>                              
                                  <div>
-                                    <button type="submit" class="btn btn-success form-control buttonBorder" onclick="sumbitSignUp()">Sign Up</button> 
+                                    <button type="submit" class="form-control buttonBorder"  id="signUpBtn" onclick="sumbitSignUp()">Sign Up</button> 
                                 </div>
                             </form>
                              <br>                                                     
@@ -121,6 +121,7 @@
                     <!-- code for Edit/Save button-->                  
                     <div>
                         <button type="button" class="editBtn" id=editButton onclick="editPost()">Edit <i class="fa fa-edit"></i></button>
+                        <button type="button" class="saveBtn" id=saveButton onclick="savePost()">Save <i class="fa fa-save"></i></button>
                     </div>
                     <p>Jimi</p>
                      
@@ -133,7 +134,7 @@
                 <!--code for Like button-->
                 <button type="button" class="likeBtn" id="likeBlog" onclick="postLiked()"><i class="fa fa-thumbs-up"> Like</button></i>
                 <div class="likeEdit">
-                    <p id="likeCount">Be the first one to like this</p>
+                    <p id="likeCount">Be the first one to like this!</p>
                 </div>
                 
                 <!--code for Comment Box-->
@@ -141,13 +142,12 @@
                 <br>
 
                 <!--code for Comment Button-->
-                <button type="button" class="commentBtn" onclick="commentDisplay(userComments)">Comment</button>
+                <button type="button" class="commentBtn" id="displayComment" onclick="commentDisplay(userComments)">Comment</button>
 
                 <!-- code for all Comments--> 
                 <div class="comments">
                     <p id="commentText">All Comments</p>
-                    <div class="addComments">
-                    
+                    <div id="addComments">
                     </div>
                 </div>                
                 

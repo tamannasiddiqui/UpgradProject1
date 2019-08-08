@@ -122,37 +122,29 @@ body {
     margin-top: 37px;
 }
 
-.btn-danger {
-    color: #fff;
-    background-color: #dc3545;
-    border-color: #dc3545;
-    width: 141px !important;
-    margin: 0px 10px 10px 10px !important;
-    border-radius: 0px !important;
-    font-weight: bolder !important;
-    font-size: 15px !important;
-}
-.btn-success {
-    color: #fff;
-    background-color: #28a745;
-    border-color: #28a745;
-    
-    border-radius: 0px !important;
-    font-weight: bolder !important;
-    font-size: 15px !important;
-
-}
-
-#deleteNoBtn {
-    width: 148px !important;
-    margin: 10px 10px 10px 10px;
-    padding: 10px;
-}
-
 #deleteYesBtn{
-    width: 148px !important;
+    color: #fff;
+    background-color: red;
+    border: 0.5px solid red;
+    width: 145px !important;
     margin: 10px 10px 10px 10px;
+    font-weight: bolder;
+    font-size: 15px ;
+    margin: 10px 4px 10px 6px;
     padding: 10px;
+    cursor: pointer;
+}
+
+#deleteNoBtn{
+    color: #fff;
+    background-color: green;
+    border: 0.5px solid green;
+    font-weight: bolder !important;
+    font-size: 15px !important;
+    width: 145px !important;
+    margin: 10px 4px 10px 6px;
+    padding: 10px;
+    cursor: pointer;
 }
 
 .deletePost{
@@ -245,3 +237,4 @@ body {
         
     } 
   }
+  

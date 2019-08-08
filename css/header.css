@@ -140,8 +140,42 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
     border-color: #1c7430 !important;
  }
 
-  .btn-success{
-     font-weight: bold !important;
+    
+ #signInBtn{
+   font-weight: bold !important;
+    color: white;
+    background-color: green;
+    transition: color .20s ease-in-out !important;
+    cursor: pointer;
+    margin-top: 29px;
+    padding: 9px;
+    font-size: 15px;
+    
+ }
+
+ #signUpBtn{
+   font-weight: bold !important;
+   color: white;
+   background-color: green;
+   transition: color .20s ease-in-out !important;
+   cursor: pointer;
+   margin-top: 29px;
+   padding: 9px;
+   font-size: 15px;
+ }
+
+  #createPost{
+   font-weight: bold !important;
+   color: white;
+   background-color: green;
+   transition: color .20s ease-in-out !important;
+   cursor: pointer;
+   margin-top: 29px;
+   padding: 9px;
+   font-size: 15px;
+  }
+ #signUpLink{
+    color: blue;
  }
  
  .footer {

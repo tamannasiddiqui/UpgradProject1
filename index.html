@@ -64,12 +64,12 @@
                                     <input class="form-control override" type="password" name="password" id="password1" placeholder="Enter Password" required>
                                 </div>                         
                                 <div>
-                                     <button type="submit" class="btn btn-success form-control buttonBorder" id="signInBtn" onclick="sumbitSignIn()">Sign In</button>
+                                     <button type="submit"  class="form-control buttonBorder" id="signInBtn" onclick="sumbitSignIn()">Sign In</button>
                                 </div>
                             </form>
                             <br>
                              <!--footer-->
-                              <p class="footer"><b>Not a member? <a href="index.html#popUpSignUp" style="color: blue" data-toggle="modal" data-target="#signUpModal" data-dismiss="modal"> Sign Up</a></b></p>
+                              <p class="footer"><b>Not a member? <a href="index.html#popUpSignUp" id="signUpLink" data-toggle="modal" data-target="#signUpModal" data-dismiss="modal"> Sign Up</a></b></p>
                                                          
                         </div>
                      </div>
@@ -91,7 +91,7 @@
                         </div>
                         <!--body-->
                         <div class="modal-body">                      
-                           <form action="./index.html" name="signUpForm" method="POST">
+                           <form action="./index.html" name="signUpForm" id="signUp" method="POST">
                                 <div class="form-group">
                                     <label><b>Full Name</b></label>
                                     <input class="form-control override" type="text" name="fullName" id="fullname" placeholder="Enter Full Name" required>
@@ -109,7 +109,8 @@
                                     <input class="form-control override" type="password" name="" id="cpassword" placeholder="Confirm Password" required>
                                 </div>                              
                                 <div>
-                                    <button type="submit" class="btn btn-success form-control buttonBorder" onclick="sumbitSignUp()">Sign Up</button>                                </div>
+                                    <button type="submit" class="form-control buttonBorder" id="signUpBtn" onclick="sumbitSignUp()">Sign Up</button>        
+                                </div>
                             </form>
                             <br>                                                     
                         </div>
@@ -127,7 +128,7 @@
                     <div class="modal-header text-center">
                         <h2 class="modal-title title w-100" id="exampleModalLongTitle"><b>New Post</b></h2>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
+                            <span aria-hidden="true" id="closePost">&times;</span>
                         </button>    
                     </div>
                     <!--body-->
@@ -138,6 +139,7 @@
                                 <input class="form-control override" type="text" name="title" id="title" placeholder="Enter title" required>
                             </div>
                             <div class="form-group">
+                                <label><b>Content</b></label>
                                  <textarea rows="5" cols="52" placeholder="Enter your content here" required></textarea>
                             </div>                         
                             <div>

@@ -20,16 +20,16 @@ function sumbitSignUp()
     //Gets the username field and clears it
      document.getElementById('username').innerHTML="";
 
-    //checks if the password and the confirm password match
+    //checks if the password and the confirm password matches
     var password = document.getElementById("password").value;
     var confirmPassword = document.getElementById("cpassword").value;
 
     if (password != confirmPassword) {
         alert("Passwords do not match.");
-        
         return false;
     }
-    return true;
+     return true;
+     
 
 }
 

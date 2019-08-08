@@ -38,6 +38,20 @@
     box-shadow: 1px 1px 4px #EA3C53;
 }
 
+.saveBtn{
+    font-family: Arial, Helvetica, sans-serif ,Abel!important;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 6px;
+    width: 76px;
+    float: right;
+    background-color: #EA3C53;
+    color: white;
+    border: none;
+    box-shadow: 1px 1px 4px #EA3C53;
+    display: none;
+}
+
 .editBtn:hover{
     background-color: crimson;
 }
@@ -75,9 +89,12 @@
 .commentBtn:hover{
     background-color: crimson;
 }
+.likeEdit{
+    margin-top: 9px;
+}
 
-.likeEdit {
-    font-family: PatrickHandSC;
+#likeCount{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
     font-weight: normal;
     margin-top: 6px;
@@ -93,4 +110,18 @@
 #commentText{
     font-size: 17px;
     font-weight: bold;
+}
+
+#addComments {
+    color: white;
+    background-color: #E8E8E8;
+    width: 743px;
+}
+
+#commentAdded {
+    color: black;
+    background-color: white;
+    padding: 19px;
+    margin: -3px 25px -7px 25px;
+    
 }
