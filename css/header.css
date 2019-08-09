@@ -144,7 +144,7 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
  #signInBtn{
    font-weight: bold !important;
     color: white;
-    background-color: green;
+    background-color:#449d44;
     transition: color .20s ease-in-out !important;
     cursor: pointer;
     margin-top: 29px;
@@ -153,10 +153,14 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
     
  }
 
+ #signInBtn:hover{
+    background-color: #1c7430;
+ }
+
  #signUpBtn{
    font-weight: bold !important;
    color: white;
-   background-color: green;
+   background-color: #449d44;
    transition: color .20s ease-in-out !important;
    cursor: pointer;
    margin-top: 29px;
@@ -164,16 +168,12 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
    font-size: 15px;
  }
 
-  #createPost{
-   font-weight: bold !important;
-   color: white;
-   background-color: green;
-   transition: color .20s ease-in-out !important;
-   cursor: pointer;
-   margin-top: 29px;
-   padding: 9px;
-   font-size: 15px;
-  }
+ #signUpBtn:hover{
+   background-color: #1c7430;
+}
+
+
+  
  #signUpLink{
     color: blue;
  }

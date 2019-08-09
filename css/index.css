@@ -20,3 +20,18 @@ textarea {
    padding: 10px;
    width: 100%;
 }
+
+#createPost{
+   font-weight: bold !important;
+   color: white;
+   background-color: #449d44;
+   transition: color .20s ease-in-out !important;
+   cursor: pointer;
+   margin-top: 29px;
+   padding: 9px;
+   font-size: 15px;
+  }
+
+  #createPost:hover{
+   background-color: #1c7430;
+}
