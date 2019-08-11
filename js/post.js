@@ -42,8 +42,8 @@ function commentDisplay(id)
 {
    if(id.value!="")
     {
-        var addComment = id.value;
-        document.getElementById('addComments').innerHTML += '<br>'+'<p id="commentAdded">'+ addComment +'</p>'+'<br>';    
+        var addComment = id.value ;
+        document.getElementById('addComments').innerHTML = '<br>'+'<p id="commentAdded">'+ addComment +'</p>'+ '<br>' + document.getElementById('addComments').innerHTML ;    
         var addComment = document.getElementById('userComments');      
         addComment.value = addComment.defaultValue;
 
