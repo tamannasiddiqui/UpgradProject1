@@ -49,7 +49,7 @@ function commentDisplay(id)
 
     }
     else{
-        alert('Enter comments to display');
+        alert('No Comments!  Enter comments to display!');
     }
    
 }
